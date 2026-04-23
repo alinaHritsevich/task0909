@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Робота з зображеннями 9</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background: linear-gradient(to right, #eef2f3, #dfe9f3);
+        }
+
+        h2{
+            font-weight: bold;
+            color: #0d6efd;
+        }
+
+        .card{
+            border: none;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-8px);
+        }
+
+        .card img{
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+
+        .img-thumbnail{
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        figure img{
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        .figure-caption{
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Фото з рамкою -->
+<div class="container mt-5 text-center">
+    <h2 class="mb-4">Місто вночі</h2>
+
+    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=700"
+         class="img-thumbnail"
+         alt="Місто">
+</div>
+
+<!-- Фото з підписом -->
+<div class="container mt-5 text-center">
+    <h2 class="mb-4">Підпис до фото</h2>
+
+    <figure class="figure">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=700"
+             class="figure-img img-fluid rounded"
+             alt="Озеро">
+
+        <figcaption class="figure-caption">
+            Тихе озеро серед гір та природи.
+        </figcaption>
+    </figure>
+</div>
+
+<!-- Картки -->
+<div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Цікаві місця</h2>
+
+    <div class="row g-4">
+
+        <!-- Картка 1 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=600"
+                     class="card-img-top"
+                     alt="Париж">
+
+                <div class="card-body">
+                    <h5 class="card-title">Париж</h5>
+
+                    <p class="card-text">
+                        Місто кохання, красивої архітектури
+                        та незабутньої атмосфери.
+                    </p>
+
+                    <a href="https://uk.wikipedia.org/wiki/Париж"
+                       class="btn btn-primary">
+                        Детальніше
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Картка 2 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=600"
+                     class="card-img-top"
+                     alt="Токіо">
+
+                <div class="card-body">
+                    <h5 class="card-title">Токіо</h5>
+
+                    <p class="card-text">
+                        Сучасне місто майбутнього,
+                        технологій та яскравих вогнів.
+                    </p>
+
+                    <a href="https://uk.wikipedia.org/wiki/Токіо"
+                       class="btn btn-success">
+                        Детальніше
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
